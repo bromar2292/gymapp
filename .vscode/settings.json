@@ -1,0 +1,55 @@
+{
+  // Hide generated files in VS Code Explorer
+  "files.exclude": {
+    "**/*.g.dart": true,
+    "**/*.freezed.dart": true,
+    "**/*.config.dart": true,
+    "**/*.gr.dart": true,
+    "**/*.chopper.dart": true,
+    "**/*.mocks.dart": true,
+    "**/coverage/": true,
+    "coverage.json": true,
+    "lcov.info": true,
+    "**/*.schema.json": true,
+    ".dart_tool/build/": true
+  },
+  
+  // Hide generated files from search
+  "search.exclude": {
+    "**/*.g.dart": true,
+    "**/*.freezed.dart": true,
+    "**/*.config.dart": true,
+    "**/*.gr.dart": true,
+    "**/*.chopper.dart": true,
+    "**/*.mocks.dart": true,
+    "**/coverage/": true,
+    "coverage.json": true,
+    "lcov.info": true,
+    "**/*.schema.json": true,
+    ".dart_tool/build/": true,
+    "**/build/": true,
+    "**/.dart_tool/": true
+  },
+  
+  // Flutter/Dart specific settings
+  "dart.showTodos": false,
+  "dart.lineLength": 100,
+  "dart.insertArgumentPlaceholders": false,
+  
+  // File associations
+  "files.associations": {
+    "*.freezed.dart": "dart",
+    "*.g.dart": "dart",
+    "*.config.dart": "dart"
+  },
+  
+  // Auto-save for better development experience
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  
+  // Format on save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}

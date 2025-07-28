@@ -1,0 +1,49 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.config.dart"
+    - "lib/generated/**"
+    - "build/**"
+  
+  errors:
+    invalid_annotation_target: ignore
+    # Treat warnings as info to reduce noise
+    unused_import: info
+    dead_code: info
+
+linter:
+  rules:
+    # Keep important safety rules
+    avoid_dynamic_calls: true
+    avoid_returning_null_for_void: true
+    use_key_in_widget_constructors: true
+    
+    # Disable overly strict formatting rules
+    sort_constructors_first: false
+    always_put_control_body_on_new_line: false
+    sort_pub_dependencies: false
+    directives_ordering: false
+    eol_at_end_of_file: false
+    require_trailing_commas: false
+    
+    # Keep helpful const rules but make them less strict
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_literals_to_create_immutables: false
+    
+    # Parameter ordering - keep for readability but make info level
+    always_put_required_named_parameters_first: true
+    
+    # Documentation - keep disabled for now
+    public_member_api_docs: false
+    
+    # Allow common patterns
+    avoid_classes_with_only_static_members: false
+    omit_local_variable_types: false
+    
+    # Personal preferences
+    prefer_single_quotes: true
+    lines_longer_than_80_chars: false
