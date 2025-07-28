@@ -63,3 +63,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Claude/LLM/AI Assistant related files
+.claude/
+TASKS.md
+PLAN.md
+ARCHITECTURE.md
